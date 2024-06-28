@@ -1,0 +1,34 @@
+body{
+    background-image: url('https://64.media.tumblr.com/d3a68f29ef23758b37e30e9565a5a8d3/b17cea39eca251df-b6/s1280x1920/938a72941bb8496e8339600663e7df29797f6413.gif');
+    background-size: cover; /* ili 'contain' zavisno od efekta koji želite */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcionalno: fiksira pozadinu tokom skrolovanja */
+    background-position: center; /* Podesite poziciju slike */
+    font-family: Arial, sans-serif;
+    
+
+}
+
+.box{
+    width: 500px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.7); /
+    border: 2px solid #fff; /* White border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+p{
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}

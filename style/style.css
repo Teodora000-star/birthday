@@ -1,0 +1,56 @@
+body{
+    background-image: url('https://64.media.tumblr.com/da32882fe0a8b066541db37203a210b4/a3b332f8d05bc138-f4/s1280x1920/0008e8fcd51b1f247c8ea075827e4e19785512ef.gifv');
+    background-size: cover; /* ili 'contain' zavisno od efekta koji želite */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcionalno: fiksira pozadinu tokom skrolovanja */
+    background-position: center; /* Podesite poziciju slike */
+    font-family: Arial, sans-serif;
+    
+
+}
+.box{
+    width: 500px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    border: 2px solid #fff; /* White border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+}
+
+
+
+h1{
+    text-align: center;
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    color: whitesmoke;
+}
+
+.button{
+    background-color: #e244d5; /* Green */
+    border: none;
+    border-radius: 10%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px; /* Adjust bottom position as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 16px;
+    
+}
+.button:hover{
+    background-color: white;
+    color: #e244d5;
+    
+}
