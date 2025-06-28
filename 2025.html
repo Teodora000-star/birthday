@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Game</title>
+  <link rel="stylesheet" href="style/2025.css">
+  <script src="script/speech.js" defer></script>
+  <script src="script/confetti.js" defer></script>
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="health-bar">
+    <div class="cake-container">
+      <img src="IMG/health-bar.png" alt="Lives Cake" class="cake-bar">
+      <div class="label">LIVES</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="character-wrapper me">
+      <img src="IMG/me.png" class="character" id="me" data-name="Me">
+      <div class="name-label">Me ❤️</div>
+    </div>
+
+    <div class="character-wrapper kimmy">
+      <img src="IMG/kimmy.png" class="character" id="kimmy" data-name="Kimmy">
+      <div class="name-label">Kimmy 🧪</div>
+    </div>
+
+    <div class="character-wrapper aaron">
+      <img src="IMG/aaron.png" class="character" id="aaron" data-name="Aaron">
+      <div class="name-label">Aaron 🏀</div>
+    </div>
+
+    <div class="character-wrapper gift">
+        <img src="IMG/gift.png" class="character" id="gift" data-name="Gift">
+      </div>
+
+    <div class="character-wrapper angie">
+      <img src="IMG/angie.png" class="character" id="angie" data-name="Angie">
+      <div class="name-label">Angie 🎂❤️</div>
+    </div>
+
+    <div class="character-wrapper neso">
+      <img src="IMG/neso.png" class="character" id="neso" data-name="Neso">
+      <div class="name-label">Neso 💍</div>
+    </div>
+
+    <div class="character-wrapper riki">
+      <img src="IMG/riki.png" class="character" id="riki" data-name="Riki">
+      <div class="name-label">Riki 💅</div>
+    </div>
+  </div>
+
+  <img src="IMG/speech-left-side.png" class="speech-bubble" id="bubble-me" style="display:none">
+  <img src="IMG/speech-right-side.png" class="speech-bubble" id="bubble-kimmy" style="display:none">
+  <img src="IMG/speech-right-side.png" class="speech-bubble" id="bubble-aaron" style="display:none">
+  <img src="IMG/speech-left-side.png" class="speech-bubble" id="bubble-angie" style="display:none">
+  <img src="IMG/speech-right-side.png" class="speech-bubble" id="bubble-neso" style="display:none">
+  <img src="IMG/speech-left-side.png" class="speech-bubble" id="bubble-riki" style="display:none">
+
+  <audio id="audio-me" src="media/me.m4a"></audio>
+  <audio id="audio-kimmy" src="media/kimmy.m4a"></audio>
+  <audio id="audio-aaron" src="media/aaron.m4a"></audio>
+  <audio id="audio-angie" src="media/angie.mp3"></audio>
+  <audio id="audio-neso" src="media/neso.m4a"></audio>
+  <audio id="audio-riki" src="media/riki.wav"></audio>
+
+  <audio id="birthday-song" src="media/happy-birthday.mp3" autoplay loop></audio>
+
+  <div id="subtitles" class="subtitles"></div>
+
+</body>
+
+</html>

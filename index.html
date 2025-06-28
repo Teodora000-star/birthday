@@ -1,39 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-            <title>
-                Happy Birthday
-            </title>
-            <link rel="stylesheet" href="style/style.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<head>
+  <title>
+      Happy Birthday
+  </title>
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap" rel="stylesheet">
-    </head>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <body>
+
+</head>
+
+<body>
+  <script src="script/sparkleButton.js"></script>
+
+
+
+  <div class="button-container">
+    <button class="sparkleButton" data-url="2024.html"><span>2024</span>
+      <div class="sparkles">
+        <div class="sparkle" style="top: 6%; left: 4%; animation-delay: 0ms;"></div>    <!-- top-left corner -->
+        <div class="sparkle" style="top: 12%; left: 20%; animation-delay: 120ms;"></div> <!-- top edge -->
+        <div class="sparkle" style="top: 8%; left: 65%; animation-delay: 240ms;"></div>  <!-- top edge -->
+        <div class="sparkle" style="top: 10%; right: 10%; animation-delay: 360ms;"></div> <!-- top-right corner -->
     
-     
-      <div class="box">
+        <div class="sparkle" style="top: 40%; left: 3%; animation-delay: 100ms;"></div>  <!-- left edge -->
+        <div class="sparkle" style="top: 50%; right: 5%; animation-delay: 220ms;"></div>  <!-- right edge -->
+        <div class="sparkle" style="top: 60%; left: 10%; animation-delay: 340ms;"></div>  <!-- left edge -->
+    
+        <div class="sparkle" style="bottom: 8%; left: 5%; animation-delay: 150ms;"></div>  <!-- bottom-left corner -->
+        <div class="sparkle" style="bottom: 6%; left: 30%; animation-delay: 270ms;"></div> <!-- bottom edge -->
+        <div class="sparkle" style="bottom: 10%; right: 25%; animation-delay: 390ms;"></div> <!-- bottom edge -->
+        <div class="sparkle" style="bottom: 5%; right: 7%; animation-delay: 510ms;"></div>  <!-- bottom-right corner -->
+      </div>
+    </button>
 
-<h1>Happy Birthday Angie</h1>
-<h1>May all your wishes come true</h1>
-<div class="button" onclick="playSound()">Click me</div>
+    <button class="sparkleButton" data-url="2025.html"><span>2025</span>
+      <div class="sparkles">
+        <div class="sparkle" style="top: 6%; left: 4%; animation-delay: 0ms;"></div>    <!-- top-left corner -->
+        <div class="sparkle" style="top: 12%; left: 20%; animation-delay: 120ms;"></div> <!-- top edge -->
+        <div class="sparkle" style="top: 8%; left: 65%; animation-delay: 240ms;"></div>  <!-- top edge -->
+        <div class="sparkle" style="top: 10%; right: 10%; animation-delay: 360ms;"></div> <!-- top-right corner -->
+    
+        <div class="sparkle" style="top: 40%; left: 3%; animation-delay: 100ms;"></div>  <!-- left edge -->
+        <div class="sparkle" style="top: 50%; right: 5%; animation-delay: 220ms;"></div>  <!-- right edge -->
+        <div class="sparkle" style="top: 60%; left: 10%; animation-delay: 340ms;"></div>  <!-- left edge -->
+    
+        <div class="sparkle" style="bottom: 8%; left: 5%; animation-delay: 150ms;"></div>  <!-- bottom-left corner -->
+        <div class="sparkle" style="bottom: 6%; left: 30%; animation-delay: 270ms;"></div> <!-- bottom edge -->
+        <div class="sparkle" style="bottom: 10%; right: 25%; animation-delay: 390ms;"></div> <!-- bottom edge -->
+        <div class="sparkle" style="bottom: 5%; right: 7%; animation-delay: 510ms;"></div>  <!-- bottom-right corner -->
+      </div>
+    </button>
+    
+    
+  </div>
 
-<audio id="clickSound">
-  <source src="media/gojo-yowai-mo-scene.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<script>
-function playSound() {
-  var audio = document.getElementById("clickSound");
-  audio.play();
-}
-</script>
-    </div>
-
-    <a href="poem.html" class="button" id="btn1">Click me next </a>
-
-
-    </body>
+  </body>
 </html>

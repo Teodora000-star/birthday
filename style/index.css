@@ -1,0 +1,83 @@
+body {
+    background-image: url('../IMG/pixel_art_large.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    image-rendering: pixelated;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+ 
+  .button-container {
+    display: flex;
+    gap: 60px; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    position: relative;
+    background-color: #ff66a3;
+    color: white;
+    border: 6px solid #660033;
+    padding: 24px 48px;
+    font-size: 40px;
+    font-family: 'Pixel Emulator', monospace;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 6px 6px #660033;
+    transition: all 0.1s ease;
+    outline: none;
+    letter-spacing: 2px;
+    overflow: visible; 
+  }
+  
+  button:hover {
+    background-color: #ff3385;
+  }
+  
+ 
+  button:active {
+    box-shadow: 0 0 #660033;
+    transform: translate(4px, 4px);
+  }
+  
+  button .sparkles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: visible;
+    display: none;
+  }
+  
+  button .sparkle {
+    position: absolute;
+    width: 7px;   
+    height: 7px;
+    background-color: white;
+    box-shadow:
+      0 0 0 2px white,
+      0 0 5px 2px #ff66a3;
+    opacity: 0.9;
+    animation: pixel-sparkle-flicker 400ms ease forwards;
+    image-rendering: pixelated;  
+  }
+  
+  @keyframes pixel-sparkle-flicker {
+    0%   { opacity: 0.9; transform: scale(1); }
+    50%  { opacity: 1;   transform: scale(1.5); }
+    100% { opacity: 0;   transform: scale(0); }
+  }
+  
+  button:active .sparkles {
+    display: block;
+  }

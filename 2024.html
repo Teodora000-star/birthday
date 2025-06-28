@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>
+                Happy Birthday
+            </title>
+            <link rel="stylesheet" href="style/style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    
+     
+      <div class="box">
+
+<h1>Happy Birthday Angie</h1>
+<h1>May all your wishes come true</h1>
+<div class="button" onclick="playSound()">Click me</div>
+
+<audio id="clickSound">
+  <source src="media/gojo-yowai-mo-scene.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+function playSound() {
+  var audio = document.getElementById("clickSound");
+  audio.play();
+}
+</script>
+    </div>
+
+    <a href="poem.html" class="button" id="btn1">Click me next </a>
+
+
+    </body>
+</html>
